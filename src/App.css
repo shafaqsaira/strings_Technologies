@@ -160,12 +160,65 @@
 }
 .flex{
   display: flex;
+  margin-top: 50px;
 }
 .top{
   margin-top: 60px;
 }
+.pcard {
+  border: 2px solid black;
+  width: 380px;
+  height: 280px;
+  margin-left: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.pdigital {
+  width: 380px;
+  height: 280px;
+  transition: transform 0.3s ease;
+  filter: blur(3px);
+}
+.pimage-container {
+  position: relative;
+  width: 300px; 
+  height: auto;
+}
+.ph2 {
+  position: absolute;
+  top: 30%; 
+  left: 65%; 
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+  text-align: center;
+}
+.pif {
+  position: absolute;
+  bottom: 25px;
+  left: 65%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  width: 90%;
+  padding: 8px;
+}
+.pcard {
+  perspective: 1200px;
+}
 
+.pcard {
+  perspective: 1200px;           /* Already present, keep */
+  transform-style: preserve-3d;  /* Add this line */
+  transition: transform 1s cubic-bezier(0.4, 0.2, 0.2, 1), box-shadow 0.4s ease; /* Add transform */
+}
 
+.pcard:hover {
+  transform: rotateY(360deg);    /* Full card including border rotates */
+  box-shadow: 0 18px 45px rgba(0,0,0,0.35); /* Optional: shadow for 3D effect */
+}
 
 
   

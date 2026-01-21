@@ -6,6 +6,7 @@ import Blog from "./pages/Blog"
 import Contact from "./pages/Contact";
 import Services from "./Components/services/Services";
 import OurServices from "./pages/OurServices"
+import OurProducts from "./pages/OurProducts"
 import "./App.css";
 
 
@@ -22,6 +23,7 @@ function App() {
         </Routes>
       </main>
       <OurServices/>
+      <OurProducts/>
       <Footer />
     </BrowserRouter>
   );

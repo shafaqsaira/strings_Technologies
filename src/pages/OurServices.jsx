@@ -5,10 +5,6 @@ import ai from "../assets/ai.jpeg"
 import training from "../assets/training.jpeg"
 import ui from "../assets/ui.jpeg"
 import web from "../assets/web.jpeg"
-
-
-
-
 function OurServices() {
   return (
     <div>
